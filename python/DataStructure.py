@@ -49,9 +49,31 @@ join_lst = "_".join(abc_list)
 
 ############### Set ###############
 
-s = set()
-s.add(1)
+s1 = set()
+s1 = {1,2,3, 4}
+s1.add("haha")
+assert "haha" in s1
+s1.remove("haha")
+
+s2 = set([3,4,5])
+
+s3 = s1.union(s2)
+assert len(s3) == 5
+
+s4 = s1.intersection(s2)
+assert len(s4) == 2
+
+s5 = s1.difference(s2)
+assert len(s5) == 2
+
+s6 = s1.symmetric_difference(s2)
+assert len(s6) == 3
 
 ############### Dictionary ###############
 
-
+dic = {}
+dic["a"] = "1"
+dic.pop("a")
+keys = dic.keys()
+for key, value in dic.items():
+	pass
