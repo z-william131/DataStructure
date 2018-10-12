@@ -59,6 +59,7 @@ class DLL(object):
 		self.size += 1
 		return node.val
 
+#### TODO: Common trick in DLL: Two pointers
 
 
 
