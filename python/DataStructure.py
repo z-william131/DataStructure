@@ -77,3 +77,9 @@ dic.pop("a")
 keys = dic.keys()
 for key, value in dic.items():
 	pass
+
+############### Tuple ###############
+
+## just to remember it is immutable
+tup = (1,2,3)
+
